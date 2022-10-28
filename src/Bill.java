@@ -29,7 +29,21 @@ public class Bill {
 
    */
     public boolean addTip() {
-        /* TO BE IMPLEMENTED! */
+        if (tipAdded == true){
+            return false;
+        }
+        if (customers >= 8){
+            totalCost *= 1.3; //30 % tip
+        }
+        else if (customers >= 4){
+            totalCost *= 1.3; //30 % tip
+        }
+        else if (customers >= 2){
+            totalCost *= 1.25; //25 % tip
+        }
+        totalCost *= 1.2; //Other case
+
+        return true;
     }
 
     /* Returns String with info about the bill */
@@ -39,5 +53,3 @@ public class Bill {
         return "Total cost for " + customers + " customers is $" + roundedBill;
     }
 }
-Bill.java
-        Displaying Bill.java.

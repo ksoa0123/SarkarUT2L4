@@ -97,5 +97,3 @@ public class BillTester {
         System.out.println("Dinner 4 total cost: " + dinner4.billInfo());
     }
 }
-BillTester.java
-        Displaying BillTester.java.
