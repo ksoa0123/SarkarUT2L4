@@ -9,5 +9,40 @@ public class Main {
         // write your code here to print the appropriate message(s)
         // described below
 
+        if (num < 0){
+            System.out.println("That's not positive");
+            System.exit(1);
+        }else {
+            if (num % 2 != 0){ //Odd
+                if (num % 5 ==0 && num %7 ==0){
+                    System.out.println("Both divisable by 5 and 7");
+                }else{
+                    if (num % 5 ==0){
+                        System.out.println("divisable by 5");
+                    }
+                    if (num % 7 ==0){
+                        System.out.println("divisable by 7");
+                    }
+                    if (num % 5 != 0 && num % 7 != 0){
+                        System.out.println("not divisable by 5 or 7");
+                    }
+                }
+            }
+
+            if (num % 2 ==0){ //Even
+                if (num >= 1000){
+                    System.out.println("Big Number");
+                }
+
+                if (num >= 100 && num < 1000){
+                    System.out.println("Medium Even Number");
+                }
+
+                if (num < 100){
+                    System.out.println("Small even number");
+                }
+            }
+        }
+
     }
 }
