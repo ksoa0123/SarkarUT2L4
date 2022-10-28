@@ -9,7 +9,7 @@ public class Main {
         // write your code here to print the appropriate message(s)
         // described below
 
-        if (num < 0){
+        if (num <= 0){
             System.out.println("That's not positive");
             System.exit(1);
         }else {
