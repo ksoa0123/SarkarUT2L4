@@ -3,7 +3,8 @@ public class CatHouseRunner {
     public static void main(String[] args) {
 
         // TASK 1: write your code here!
-
+        Cathouse cat1 = new CatHouse("Garfield", "Tom", "WarnerBro");
+        Cathouse cat2 = new CatHouse("Garfield", "Tom", "WarnerBro");
 
 
 
